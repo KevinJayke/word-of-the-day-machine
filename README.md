@@ -6,8 +6,8 @@ To use the DicoLink API in your project, you will need an API key from the DicoL
 
 Once you have your API key, you need to configure the `.env` file at the root of your project. In a `.env` file you created, add the following:
 
-REACT_APP_API_KEY=<your-cool-api-key>
-REACT_APP_BASE_URL=https://api.dicolink.com/v1/mots
+`REACT_APP_API_KEY=<your-cool-api-key>`
+`REACT_APP_BASE_URL=https://api.dicolink.com/v1/mots`
 
 Make sure to replace `<your-cool-api-key>` with your actual API key.
 
@@ -15,7 +15,7 @@ Make sure to replace `<your-cool-api-key>` with your actual API key.
 
 To run the app, you can use the following command in your terminal:
 
-yarn start
+`yarn start`
 
 This will start the app in development mode and open it in your default browser at http://localhost:3000.
 
