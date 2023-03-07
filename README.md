@@ -6,8 +6,10 @@ To use the DicoLink API in your project, you will need an API key from the DicoL
 
 Once you have your API key, you need to configure the `.env` file at the root of your project. In a `.env` file you created, add the following:
 
-`REACT_APP_API_KEY=<your-cool-api-key>`
-`REACT_APP_BASE_URL=https://api.dicolink.com/v1/mots`
+```
+REACT_APP_API_KEY=<your-cool-api-key>
+REACT_APP_BASE_URL=https://api.dicolink.com/v1/mots
+```
 
 Make sure to replace `<your-cool-api-key>` with your actual API key.
 
