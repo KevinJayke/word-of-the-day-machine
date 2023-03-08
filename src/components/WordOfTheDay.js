@@ -13,8 +13,9 @@ const WordOfTheDay = () => {
       <p>
         {data?.definitions.map((mot) => (
           <>
-            <p>{mot.nature}</p>
-            <p>{mot.definition}</p>
+            <p key={mot.index}>
+              {mot.nature} - {mot.definition}
+            </p>
           </>
         ))}
       </p>
