@@ -1,5 +1,6 @@
 import { useQuery } from "react-query";
 import fetchWord from "../api/fetchWord";
+import { v4 as uuidv4 } from "uuid";
 
 const WordOfTheDay = () => {
   const { data, error, isLoading } = useQuery("mot", fetchWord);
@@ -10,15 +11,13 @@ const WordOfTheDay = () => {
   return (
     <div>
       <h2>{data?.mot}</h2>
-      <p>
+      <div>
         {data?.definitions.map((mot) => (
-          <>
-            <p key={mot.index}>
-              {mot.nature} - {mot.definition}
-            </p>
-          </>
+          <p key={uuidv4()}>
+            {mot.nature} - {mot.definition}
+          </p>
         ))}
-      </p>
+      </div>
     </div>
   );
 };
