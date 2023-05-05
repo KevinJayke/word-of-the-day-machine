@@ -23,24 +23,6 @@ This will start the app in development mode and open it in your default browser
 
 The page will automatically reload if you make changes to the code. You can also see any lint errors in the console.
 
-## Available Scripts
-
-In addition to `yarn start`, there are other scripts available in the project:
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.
-
-### `yarn eject`
-
-Removes the single build dependency and copies all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc.) into the project.
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
 ## Conclusion
 
 With these steps, you should be able to set up your project to use the DicoLink API and run it in development mode. Feel free to explore the other available scripts and customize your project as needed. If you have any issues or questions, refer to the documentation or reach out to the DicoLink support team.
