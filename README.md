@@ -17,9 +17,9 @@ Make sure to replace `<your-cool-api-key>` with your actual API key.
 
 To run the app, you can use the following command in your terminal:
 
-`yarn start`
+`yarn dev`
 
-This will start the app in development mode and open it in your default browser at http://localhost:3000.
+This will start the app in development mode and open it in your default browser
 
 The page will automatically reload if you make changes to the code. You can also see any lint errors in the console.
 
