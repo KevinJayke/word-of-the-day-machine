@@ -1,3 +1,5 @@
+import Definitions from "@/components/Definitions";
+import Word from "@/components/Word";
 import { format } from "date-fns";
 
 async function getData() {
@@ -18,8 +20,9 @@ async function getData() {
   return response.json();
 }
 
-export default async function Word() {
+export default async function WordApi({ isDefinition }) {
   const data = await getData();
 
-  return <div>{data.mot}</div>;
+  if (isDefinition) return <Definitions definitions={data.definitions} />;
+  else return <Word word={data.mot} />;
 }

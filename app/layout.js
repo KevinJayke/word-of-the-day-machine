@@ -1,7 +1,15 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 
-const inter = Inter({ subsets: ["latin"] });
+const ticketingFont = localFont({
+  src: "../fonts/Ticketing.ttf",
+  variable: "--font-ticketing",
+});
+
+const paskowyFont = localFont({
+  src: "../fonts/Paskowy.ttf",
+  variable: "--font-paskowy",
+});
 
 export default function RootLayout({ children }) {
   return (
@@ -9,7 +17,10 @@ export default function RootLayout({ children }) {
       <head>
         <title>Mot du jour</title>
       </head>
-      <body className={inter.className}>{children}</body>
+      <body
+        className={`${ticketingFont.variable} ${paskowyFont.variable} font-mono min-h-screen flex justify-center items-center`}>
+        {children}
+      </body>
     </html>
   );
 }
