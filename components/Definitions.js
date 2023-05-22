@@ -6,7 +6,9 @@ const Definitions = ({ definitions }) => {
       </h2>
       {definitions.map((text, index) => (
         <div key={index} className="py-4">
-          <h3 className="text-lg font-sans pb-1">({text.nature})</h3>
+          {text.nature && (
+            <h3 className="text-lg font-sans pb-1">({text.nature})</h3>
+          )}
           <h3 key={index} className="text-xl font-sans">
             {text.definition}
           </h3>
