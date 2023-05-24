@@ -1,5 +1,11 @@
 const Word = ({ word }) => {
-  return <h1 className="text-6xl font-sans capitalize py-5">{word}</h1>;
+  return (
+    <h1
+      lang="fr"
+      className="break-words hyphens-auto text-6xl font-sans capitalize py-5">
+      {word}
+    </h1>
+  );
 };
 
 export default Word;
