@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
         <title>Mot du jour</title>
       </head>
       <body
-        className={`${ticketingFont.variable} ${paskowyFont.variable} font-mono min-h-screen flex justify-center items-center bg-gradient-to-b from-yellow-400 to-amber-400`}>
+        className={`${ticketingFont.variable} ${paskowyFont.variable} font-mono min-h-screen flex justify-center items-center bg-amber-400`}>
         {children}
       </body>
     </html>

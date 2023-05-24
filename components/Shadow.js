@@ -13,7 +13,7 @@ function Shadow() {
   });
 
   return (
-    <div className="-z-10 absolute inset-y-0 -left-24 opacity-25 scale-y-95 mix-blend-multiply">
+    <div className="-z-10 absolute inset-y-0 -left-20 opacity-25 scale-y-95 mix-blend-multiply">
       <svg
         id="shadow"
         xmlns="http://www.w3.org/2000/svg"
