@@ -2,7 +2,7 @@ const Definitions = ({ definitions }) => {
   return (
     <div>
       <h2 className="text-xl font-sans font-bold uppercase pt-5">
-        {definitions.length > 0 ? "définitions" : "definition"}
+        {definitions.length > 0 ? "définitions" : "définition"}
       </h2>
       {definitions.map((text, index) => (
         <div key={index} className="py-4">
