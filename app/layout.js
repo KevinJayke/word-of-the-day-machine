@@ -1,6 +1,7 @@
 import Cup from "@/components/Cup";
 import "./globals.css";
 import localFont from "next/font/local";
+import Croissant from "@/components/Croissant";
 
 const ticketingFont = localFont({
   src: "../fonts/Ticketing.ttf",
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${ticketingFont.variable} ${paskowyFont.variable} font-mono min-h-screen flex justify-center items-center bg-amber-400`}>
         <Cup />
+        <Croissant />
         {children}
       </body>
     </html>
