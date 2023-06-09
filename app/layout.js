@@ -20,9 +20,12 @@ export default function RootLayout({ children }) {
         <title>Mot du jour</title>
       </head>
       <body
+        id="body"
         className={`${ticketingFont.variable} ${paskowyFont.variable} font-mono min-h-screen flex justify-center items-center bg-amber-400`}>
-        <Cup />
-        <Croissant />
+        <div className="z-10">
+          <Cup />
+          <Croissant />
+        </div>
         {children}
       </body>
     </html>

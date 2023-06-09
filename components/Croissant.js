@@ -1,6 +1,18 @@
+"use client";
+import { useEffect } from "react";
+
 function Croissant() {
+  useEffect(() => {
+    const handleResize = () => {
+      const windowWidth = window.innerWidth;
+      return windowWidth;
+    };
+    window.addEventListener("resize", handleResize);
+  }, []);
+
   return (
     <svg
+      id="croissant"
       className="fixed top-0 right-0"
       xmlns="http://www.w3.org/2000/svg"
       fillRule="evenodd"
