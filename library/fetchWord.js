@@ -23,6 +23,6 @@ async function getData() {
 export default async function WordApi({ isDefinition }) {
   const data = await getData();
 
-  if (isDefinition) return <Definitions definitions={data.definitions} />;
-  else return <Word word={data.mot} />;
+  if (isDefinition) return <Definitions definitions={data?.definitions} />;
+  else return <Word word={data?.mot} />;
 }

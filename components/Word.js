@@ -3,7 +3,7 @@ const Word = ({ word }) => {
     <h1
       lang="fr"
       className="break-words hyphens-auto text-6xl font-sans capitalize py-5">
-      {word}
+      {word ? word : "erreur"}
     </h1>
   );
 };

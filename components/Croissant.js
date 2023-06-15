@@ -5,8 +5,11 @@ function Croissant() {
   useEffect(() => {
     const handleResize = () => {
       const windowWidth = window.innerWidth;
-      return windowWidth;
+      if (windowWidth === 1000) {
+        return console.log("hello");
+      }
     };
+
     window.addEventListener("resize", handleResize);
   }, []);
 
