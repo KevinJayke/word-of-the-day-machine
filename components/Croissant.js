@@ -1,18 +1,8 @@
 "use client";
-import { useEffect } from "react";
+import useResize from "@/library/useResize";
 
 function Croissant() {
-  useEffect(() => {
-    const handleResize = () => {
-      const windowWidth = window.innerWidth;
-      if (windowWidth === 1000) {
-        return console.log("hello");
-      }
-    };
-
-    window.addEventListener("resize", handleResize);
-  }, []);
-
+  useResize();
   return (
     <svg
       id="croissant"
