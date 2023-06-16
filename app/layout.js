@@ -22,10 +22,8 @@ export default function RootLayout({ children }) {
       <body
         id="body"
         className={`${ticketingFont.variable} ${paskowyFont.variable} font-mono min-h-screen flex justify-center items-center bg-amber-400`}>
-        <div className="z-10">
-          <Cup />
-          <Croissant />
-        </div>
+        <Cup />
+        <Croissant />
         {children}
       </body>
     </html>

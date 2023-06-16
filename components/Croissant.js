@@ -2,7 +2,12 @@
 import useResize from "@/library/useResize";
 
 function Croissant() {
-  useResize();
+  useResize(
+    "croissant",
+    "-500 400 600 800",
+    "-350 400 600 800",
+    "0 400 600 800"
+  );
   return (
     <svg
       id="croissant"

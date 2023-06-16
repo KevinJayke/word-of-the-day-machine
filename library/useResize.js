@@ -1,18 +1,17 @@
 import { useEffect } from "react";
 
-function useResize() {
+function useResize(id, small, medium, big) {
   useEffect(() => {
     const handleResize = () => {
       const windowWidth = window.innerWidth;
-      const shape = document.getElementById("croissant");
-      console.log(windowWidth);
+      const shape = document.getElementById(id);
 
       if (windowWidth < 775) {
-        return shape.setAttribute("viewBox", "-500 400 600 800");
+        return shape.setAttribute("viewBox", small);
       } else if (windowWidth < 1320) {
-        return shape.setAttribute("viewBox", "-350 400 600 800");
+        return shape.setAttribute("viewBox", medium);
       } else {
-        return shape.setAttribute("viewBox", "0 400 600 800");
+        return shape.setAttribute("viewBox", big);
       }
     };
 
@@ -26,7 +25,7 @@ function useResize() {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, []);
+  });
 }
 
 export default useResize;

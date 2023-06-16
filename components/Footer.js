@@ -1,15 +1,14 @@
 const Footer = () => {
   return (
-    <footer>
-      <h3 className="text-center text-xl font-sans pt-8">
-        ** Développé par{" "}
+    <footer className="text-center sm:text-xl text-lg font-sans">
+      <h3 className="pt-4">Développé par</h3>
+      <h3>
         <a
           target="_blank"
           href="https://hello-kevin.netlify.app/"
           className="py-1 px-2 bg-black text-white">
           Kévin Jayat
-        </a>{" "}
-        **
+        </a>
       </h3>
     </footer>
   );

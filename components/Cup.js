@@ -1,6 +1,11 @@
+"use client";
+import useResize from "@/library/useResize";
+
 function Cup() {
+  useResize("cup", "500 0 554 500", "350 0 554 500", "70 0 554 500");
   return (
     <svg
+      id="cup"
       className="fixed bottom-0 left-0"
       xmlns="http://www.w3.org/2000/svg"
       fillRule="evenodd"

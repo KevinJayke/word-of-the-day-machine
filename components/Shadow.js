@@ -4,13 +4,20 @@ import { useEffect } from "react";
 
 function Shadow() {
   useEffect(() => {
-    const frameHeight = document.getElementById("frame").offsetHeight;
-    const setSvgHeight = document
-      .getElementById("shadow")
-      .setAttribute("height", frameHeight);
+    const handleResize = () => {
+      const frameHeight = document.getElementById("frame").offsetHeight;
+      const shadowElement = document.getElementById("shadow");
+      shadowElement.setAttribute("height", frameHeight);
+    };
 
-    return setSvgHeight;
-  });
+    window.addEventListener("resize", handleResize);
+
+    handleResize();
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <div className="-z-10 absolute inset-y-0 -left-20 opacity-25 scale-y-95 mix-blend-multiply">
