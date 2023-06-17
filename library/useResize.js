@@ -25,7 +25,7 @@ function useResize(id, small, medium, big) {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  });
+  }, [id, small, medium, big]);
 }
 
 export default useResize;
