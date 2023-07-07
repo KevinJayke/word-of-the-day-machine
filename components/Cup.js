@@ -6,7 +6,7 @@ function Cup() {
   return (
     <svg
       id="cup"
-      className="fixed bottom-0 left-0"
+      className="fixed bottom-0 left-0 -z-20"
       xmlns="http://www.w3.org/2000/svg"
       fillRule="evenodd"
       strokeLinecap="round"
