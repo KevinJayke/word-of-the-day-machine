@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer className="text-center sm:text-xl text-lg font-sans">
-      <h3 className="pt-4">******** Visitez ********</h3>
+      <h3 className="pt-4">******* Visitez *******</h3>
       <h3>
         <a
           target="_blank"
