@@ -7,7 +7,7 @@ const Footer = () => {
           target="_blank"
           href="https://hello-kevin.netlify.app/"
           className="py-1 px-2 bg-black text-white">
-          mon site
+          mon autre site
         </a>
       </h3>
     </footer>
