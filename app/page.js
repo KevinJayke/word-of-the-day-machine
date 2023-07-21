@@ -3,6 +3,8 @@ import Header from "@/components/Header";
 import Shadow from "@/components/Shadow";
 import WordApi from "@/library/fetchWord";
 
+export const revalidate = 0;
+
 export default function Page() {
   return (
     <div
