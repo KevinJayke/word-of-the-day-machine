@@ -18,6 +18,12 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <title>Mot du jour</title>
+        <link
+          rel="icon"
+          href="/icon?<generated>"
+          type="image/<generated>"
+          sizes="<generated>"
+        />
       </head>
       <body
         id="body"
