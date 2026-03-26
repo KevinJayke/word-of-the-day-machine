@@ -1,5 +1,5 @@
 import Image from "next/image";
-import croissant from "../library/img/croissant.png";
+import croissant from "../public/img/croissant.png";
 
 function Croissant() {
   return (

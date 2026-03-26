@@ -1,5 +1,5 @@
 import Image from "next/image";
-import cafe from "../library/img/cafe.png";
+import cafe from "../public/img/cafe.png";
 
 function Cafe() {
   return (
